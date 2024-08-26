@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Signika", sans-serif;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    position: fixed;
+    top: 0px;
+}
+.nav {
+    display: flex;
+    gap: 2em;
+    padding: 1em;
+    font-size:larger;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.parallax1, .parallax2, .parallax3 {
+    min-height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+}
+.parallax1{
+    background-image: url("img-1.jpg");
+}
+.parallax2{
+    background-image: url("img-2.jpg");
+}
+.parallax3{
+    background-image: url("img-3.jpg");
+}
+.puppy1, .puppy2, .puppy3 {
+    width: 85%;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.759);
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    transition: all .5s ease;
+}
+.puppy1:hover, .puppy2:hover, .puppy3:hover {
+    box-shadow: 5px 5px 5px rgb(143, 142, 142);
+    transform: scale(1.03);
+}
+img{
+    width: 40em;
+    padding: 2em;
+    border-radius: 3em;
+}
+.p1b h1, .p2b h1, .p3b h1 {
+    padding-bottom: 0.5em;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
